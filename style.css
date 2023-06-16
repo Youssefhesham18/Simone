@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+}
+.html{
+    font-size: 16px;
+}
+.home{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.648),rgba(0, 0, 0, 0.721)),url(images/intro-bg.jpg);
+    background-size: cover;
+    background-position: center center;
+    /* display: flex; */
+}
+ .nav{
+    width: 100%;
+    display: flex;
+    padding: 20px;
+ }
+ .logo{
+    padding: 5px;
+    width: 30%;
+    justify-content: left;
+ }
+ .ul{
+    width: 65%;
+    list-style-type: none;
+ }
+.ul1 li{
+    display: inline-block;
+    list-style-type: none;
+    margin: 11px;
+    font-size: 1em;
+}
+.ul1 li a{
+    text-decoration: none;
+    color: white;
+    transition: all 0.4s;
+}
+.ul1 li a:hover{
+    color: #20c997;
+}
+.home-content{
+    margin-top: 10%;
+    font-size: 2em;
+    color: white;
+    text-align: center !important; 
+}
+.home-content a{
+    font-size: 18px;
+    margin-top: 15px;
+}
+.home-content p{
+    color: white;
+    font-size: 1.5em;
+    margin: 15px;
+}
+#spin::after{
+    content: "";
+    color: white;
+    animation: spin 4s infinite;
+}
+@keyframes spin{
+    0%{
+        content: "Simone Olivia.";
+    }
+    25%{
+        content: "a Freelancer.";
+    }
+    50%{
+        content: "a Photographer.";
+    }
+    100%{
+        content: "a Designer.";
+    }
+}
+.home-content button{
+    padding: 10px 25px;
+    margin-top: 15px;
+    background: transparent;
+    border: #20c997 2px solid;
+    color: #20c997;
+    text-align: center;
+    border-radius: 20px;
+    font-size: 18px;
+    transition: all 1s;
+}
+#btn1:hover{
+    background: #20c997;
+    color: white;
+}
